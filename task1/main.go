@@ -69,7 +69,7 @@ func main() {
 	fmt.Println(pass)
 
 	if err := writePasswordToFile(pass); err != nil {
-		wrapError(err)
+		fmt.Println(wrapError(err))
 	}
 
 }
